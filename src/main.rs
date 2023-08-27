@@ -41,7 +41,7 @@ fn main() {
     let builder = Builder::from_string(glade_src);
 
     let image_data: Vec<f32> = "/image/img1.jpg"
-    let model_path = "/model";
+    let model_path = "/model/object_model.pb";
 
     let detection_results = perform_object_detection(image_data, model_path)?;
 
